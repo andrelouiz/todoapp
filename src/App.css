@@ -1,0 +1,149 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.App {
+  align-items: center;
+  justify-content: center;
+}
+.main{
+  display: flex;
+}
+
+body {
+  background: rgb(36, 7, 93);
+}
+.title h1 {
+  color: #ffffff;
+  font-size: 60px;
+  text-align: center;
+  margin: 30px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+/*form background*/
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 450px;
+    min-height: 10px;
+    background: #ffffff;
+    text-align: center;
+    margin: 30px auto;
+    margin-top: auto;
+    border-radius: 10px;
+    padding-bottom: 3px;
+}
+form h3 {
+  text-align: center;
+}
+form input {
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  padding: 14px 32px 14px 26px;
+  border-radius: 10px;
+  border: 2px solid rgb(36, 7, 93);
+  outline: none;
+  width: 340px;
+  background: transparent;
+  color: rgb(86, 79, 95);
+}
+.input_container {
+  margin-bottom: 0px;
+  position: relative;
+}
+/*button*/
+.btn_container {
+  margin-top: 13px;
+  margin-right: 90px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+/*button*/
+.btn_container button {
+  min-height: 45px;
+  background: rgb(36, 7, 93);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.todo_container {
+  width: 450px;
+  margin: 0 auto;
+}
+
+/*todos background*/
+.todo {
+  display: flex;
+  margin-top: 10px;
+  min-height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+/*todos font*/
+.todo input {
+  cursor: pointer;
+  color: rgb(36, 7, 93);
+  width: 70%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.button-complete,
+.button-delete,
+.button-edit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+}
+#i {
+  font-size: 20px;
+}
+.button-complete {
+  color: #25a836;
+  margin-right: 10px;
+}
+.button-edit {
+  color: #ea990c;
+  margin-right: 10px;
+}
+.button-delete {
+  color: rgb(39, 1, 1);
+}
+
+@media screen and (max-width: 667px) {
+  .task_container {
+    width: 90%;
+  }
+  .task {
+    margin-right: 0px;
+  }
+} 
+
+input:focus,
+button:focus {
+  outline: none;
+}
